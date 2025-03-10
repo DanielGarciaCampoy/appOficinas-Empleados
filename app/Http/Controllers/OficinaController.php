@@ -12,7 +12,8 @@ class OficinaController extends Controller
      */
     public function index()
     {
-        //
+        $oficinas = Oficina::all();
+        return view('oficinas.index', compact('oficinas'));
     }
 
     /**
